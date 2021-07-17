@@ -1,18 +1,22 @@
 import React from 'react';
 
-const Card = () => {
+const Card = (props: any) => {
 
     return <React.Fragment>
        <div className="card">
-            
-                <div className="card-banner">
-                    <div className="bottom-left"></div>
+            <div className="card-banner">
+                <div className="bottom-left"></div>
                 </div>
-                <div className="card-container">
-                <div className="university-container">
-                    <p className="title">Canadian University of Dubai</p>
-                    <p className="country">United Arab Emirates</p>
-                </div> 
+            <div className="card-container">
+                {props.type == 'university' && <div className="university-container">
+                    <p className="university-title">{props?.data.university_name}</p>
+                    <p className="university-country">{props?.data.country_name}</p>
+                </div>}
+                {props.type == 'course' && <div className="university-course-container">
+                    <p className="course-title">{props?.data.course_name}</p>
+                    <p className="course-university">{props?.data.university_name}</p>
+                    <p className="course-country">{props?.data.country_name}</p>
+                </div>}
                 <div className="tuition-course-details">
                     <div className="scholarships-container">
                         <div className="scholarship-details">
@@ -22,7 +26,7 @@ const Card = () => {
                     </div>
                     <div className="tuition-container">
                         <span id="tuition-name">Est. Tuition</span>
-                        <span id="tuition-cost">AED 73,800 / Year</span>
+                        <span id="tuition-cost">{props?.data.currency} 73,800 / Year</span>
                     </div>
                     <hr/>
                     <div className="course-container">

@@ -15,10 +15,10 @@ const Tab = (props: any) => {
                 <div className="tab-content">
                     <hr className="divider" />
                     <section id="tab-item-1">
-                        {props.university}
+                        {props.universities}
                     </section>
                     <section id="tab-item-2">
-                        {/* <h1>Courses</h1> */}
+                        {props.courses}
                     </section>
                 </div>
 		    </div>

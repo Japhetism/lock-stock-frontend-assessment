@@ -8,7 +8,6 @@
 }
 
 body {
-	/* background: #3498DB; */
 	font-family: "Segoe UI","Microsoft YaHei";
 }
 
@@ -115,7 +114,8 @@ a {
 #tab-2:checked ~ .tab-content #tab-item-2  {
 	display: block;
     text-align: left;
-    padding: 0px 50px 0px 550px;
+    margin: 0px 250px 0px 250px;
+    padding: 0px 150px 0px 150px;
 }
 
 /* effect-3 */
@@ -230,14 +230,39 @@ img {
     border-radius: 5px;
 }
 
-.university-container > .title {
+.university-container > .university-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 20px;
+    height: 100px;
+    max-height: 100px;
 }
 
-.university-container > .country {
+.university-container > .university-country {
     font-weight: 100;
+}
+
+.university-course-container > .course-title {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+    max-height: 100px;
+}
+
+.university-course-container > .course-country {
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.university-container {
+    height: 100px;
+    max-height: 100px;
+}
+
+.university-course-container {
+    height: 120px;
+    max-height: 120px;
 }
 
 .card-banner {
@@ -295,13 +320,14 @@ img {
         display: block;
         text-align: left;
         padding: 0px;
-        margin: 0pc;
+        margin: 0px;
     }
     
     #tab-2:checked ~ .tab-content #tab-item-2  {
         display: block;
         text-align: left;
         padding: 0px;
+        margin: 0px;
     }
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
