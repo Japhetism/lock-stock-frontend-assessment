@@ -1,0 +1,1 @@
+export { CourseContainer as default } from './course.container';
